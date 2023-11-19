@@ -252,8 +252,9 @@ def data_visualization_with_map(unique_data_df):
             popup=folium.Popup(state_info, max_width=300)
         ).add_to(UNEMPLOYMENT_MAP)
 
+    
+    # UNEMPLOYMENT_MAP.save('state_map.html')  # Save the map as an HTML file
     # Display the map
-    UNEMPLOYMENT_MAP.save('state_map.html')  # Save the map as an HTML file
     UNEMPLOYMENT_MAP.show_in_browser()
     
 
