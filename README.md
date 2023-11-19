@@ -47,7 +47,7 @@ The `unemployment_analysis.py` script performs the following tasks:
 
 ## Video Representation
 
-Check out the video representation of the project for a more interactive and engaging overview: [Unemployment Analysis Video](https://youtu.be/nlaYP8139KA)
+Check out the video representation of the project for a more interactive and engaging overview: [Unemployment Analysis Video](https://youtu.be/4Fk8Sjj6dc4)
 
 
 ## Requirements
