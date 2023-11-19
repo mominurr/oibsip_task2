@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd834e7714af355b574c7ded81b1662b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd834e7714af355b574c7ded81b1662b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd834e7714af355b574c7ded81b1662b = L.map(
+                "map_dd834e7714af355b574c7ded81b1662b",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_226a9327278acc7d9225901802910091 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_226a9327278acc7d9225901802910091.addTo(map_dd834e7714af355b574c7ded81b1662b);
+    
+            var marker_d4924f97c5f757a73e599bbcaefac24d = L.marker(
+                [15.9129, 79.74],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_8b05622d57357bf72d4b5183abf1cebd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6c12ee12a1b7faca7ab38877874c78bc = $(`<div id="html_6c12ee12a1b7faca7ab38877874c78bc" style="width: 100.0%; height: 100.0%;"><h5><b>Region: South</b></h3>            <h6><b>State: Andhra Pradesh</b></h4>            <strong>Min Unemployment Rate</strong> <b>3.31</b><br>            <strong>Avg Unemployment Rate:</strong> <b>8.66</b><br>            <strong>Max Unemployment Rate:</strong> <b>20.51</b><br>            <strong>Min Employed:</strong> <b>11336911.00</b><br>            <strong>Avg Employed:</strong> <b>15425480.00</b><br>            <strong>Max Employed:</strong> <b>19805400.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>33.10</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>38.96</b><br>            <strong>Max Labour Participation Rate:</strong> <b>47.41</b></div>`)[0];
+                popup_8b05622d57357bf72d4b5183abf1cebd.setContent(html_6c12ee12a1b7faca7ab38877874c78bc);
+            
+        
+
+        marker_d4924f97c5f757a73e599bbcaefac24d.bindPopup(popup_8b05622d57357bf72d4b5183abf1cebd)
+        ;
+
+        
+    
+    
+            marker_d4924f97c5f757a73e599bbcaefac24d.bindTooltip(
+                `<div>
+                     Andhra Pradesh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7bc54acdf3705d1ead0562dadd5ec4a6 = L.marker(
+                [26.2006, 92.9376],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_5b1e9b7451d9493ff977346b838d48bb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_67d285b325a05bd66ea23134b47aed9b = $(`<div id="html_67d285b325a05bd66ea23134b47aed9b" style="width: 100.0%; height: 100.0%;"><h5><b>Region: Northeast</b></h3>            <h6><b>State: Assam</b></h4>            <strong>Min Unemployment Rate</strong> <b>0.60</b><br>            <strong>Avg Unemployment Rate:</strong> <b>4.86</b><br>            <strong>Max Unemployment Rate:</strong> <b>11.06</b><br>            <strong>Min Employed:</strong> <b>6830817.00</b><br>            <strong>Avg Employed:</strong> <b>10810275.50</b><br>            <strong>Max Employed:</strong> <b>14107641.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>29.55</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>43.50</b><br>            <strong>Max Labour Participation Rate:</strong> <b>54.38</b></div>`)[0];
+                popup_5b1e9b7451d9493ff977346b838d48bb.setContent(html_67d285b325a05bd66ea23134b47aed9b);
+            
+        
+
+        marker_7bc54acdf3705d1ead0562dadd5ec4a6.bindPopup(popup_5b1e9b7451d9493ff977346b838d48bb)
+        ;
+
+        
+    
+    
+            marker_7bc54acdf3705d1ead0562dadd5ec4a6.bindTooltip(
+                `<div>
+                     Assam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2222fcccc6b796b7ce666e0404a7069d = L.marker(
+                [25.0961, 85.3131],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_e0d961a92c9ff0da697a9d01c5f8471f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47a0ae6aebbb91ac52296207c18ed843 = $(`<div id="html_47a0ae6aebbb91ac52296207c18ed843" style="width: 100.0%; height: 100.0%;"><h5><b>Region: East</b></h3>            <h6><b>State: Bihar</b></h4>            <strong>Min Unemployment Rate</strong> <b>9.82</b><br>            <strong>Avg Unemployment Rate:</strong> <b>19.47</b><br>            <strong>Max Unemployment Rate:</strong> <b>46.64</b><br>            <strong>Min Employed:</strong> <b>16046236.00</b><br>            <strong>Avg Employed:</strong> <b>23606828.00</b><br>            <strong>Max Employed:</strong> <b>26902907.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>34.59</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>37.17</b><br>            <strong>Max Labour Participation Rate:</strong> <b>38.69</b></div>`)[0];
+                popup_e0d961a92c9ff0da697a9d01c5f8471f.setContent(html_47a0ae6aebbb91ac52296207c18ed843);
+            
+        
+
+        marker_2222fcccc6b796b7ce666e0404a7069d.bindPopup(popup_e0d961a92c9ff0da697a9d01c5f8471f)
+        ;
+
+        
+    
+    
+            marker_2222fcccc6b796b7ce666e0404a7069d.bindTooltip(
+                `<div>
+                     Bihar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b14e5c572a0d790f9403295b16421e8 = L.marker(
+                [21.2787, 81.8661],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_12429c402c49ca3f1fbf0f6f29b31b8e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_76760fcad370e5c4b78585d54d0fd99e = $(`<div id="html_76760fcad370e5c4b78585d54d0fd99e" style="width: 100.0%; height: 100.0%;"><h5><b>Region: West</b></h3>            <h6><b>State: Chhattisgarh</b></h4>            <strong>Min Unemployment Rate</strong> <b>1.96</b><br>            <strong>Avg Unemployment Rate:</strong> <b>7.82</b><br>            <strong>Max Unemployment Rate:</strong> <b>14.23</b><br>            <strong>Min Employed:</strong> <b>6991217.00</b><br>            <strong>Avg Employed:</strong> <b>8421349.20</b><br>            <strong>Max Employed:</strong> <b>9302317.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>35.23</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>41.16</b><br>            <strong>Max Labour Participation Rate:</strong> <b>45.59</b></div>`)[0];
+                popup_12429c402c49ca3f1fbf0f6f29b31b8e.setContent(html_76760fcad370e5c4b78585d54d0fd99e);
+            
+        
+
+        marker_3b14e5c572a0d790f9403295b16421e8.bindPopup(popup_12429c402c49ca3f1fbf0f6f29b31b8e)
+        ;
+
+        
+    
+    
+            marker_3b14e5c572a0d790f9403295b16421e8.bindTooltip(
+                `<div>
+                     Chhattisgarh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5d59e9894805b124bac34a53ac22258 = L.marker(
+                [28.7041, 77.1025],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_7103078a1f1f5d80e781787a078c3530 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c2aa63b18a9aedd110982298bec260d3 = $(`<div id="html_c2aa63b18a9aedd110982298bec260d3" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Delhi</b></h4>            <strong>Min Unemployment Rate</strong> <b>6.27</b><br>            <strong>Avg Unemployment Rate:</strong> <b>18.41</b><br>            <strong>Max Unemployment Rate:</strong> <b>42.27</b><br>            <strong>Min Employed:</strong> <b>2632404.00</b><br>            <strong>Avg Employed:</strong> <b>4632821.90</b><br>            <strong>Max Employed:</strong> <b>5856307.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>23.80</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>35.86</b><br>            <strong>Max Labour Participation Rate:</strong> <b>47.79</b></div>`)[0];
+                popup_7103078a1f1f5d80e781787a078c3530.setContent(html_c2aa63b18a9aedd110982298bec260d3);
+            
+        
+
+        marker_b5d59e9894805b124bac34a53ac22258.bindPopup(popup_7103078a1f1f5d80e781787a078c3530)
+        ;
+
+        
+    
+    
+            marker_b5d59e9894805b124bac34a53ac22258.bindTooltip(
+                `<div>
+                     Delhi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f64b8ab5bcd196c99f531a5e385f3faa = L.marker(
+                [15.2993, 74.124],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_d81482d6c511c6b285915ab7f90c87ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_358a5d4347cdc14ce534373e4ddde2da = $(`<div id="html_358a5d4347cdc14ce534373e4ddde2da" style="width: 100.0%; height: 100.0%;"><h5><b>Region: West</b></h3>            <h6><b>State: Goa</b></h4>            <strong>Min Unemployment Rate</strong> <b>2.81</b><br>            <strong>Avg Unemployment Rate:</strong> <b>12.17</b><br>            <strong>Max Unemployment Rate:</strong> <b>21.25</b><br>            <strong>Min Employed:</strong> <b>378244.00</b><br>            <strong>Avg Employed:</strong> <b>442374.80</b><br>            <strong>Max Employed:</strong> <b>500614.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>33.88</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>39.24</b><br>            <strong>Max Labour Participation Rate:</strong> <b>44.97</b></div>`)[0];
+                popup_d81482d6c511c6b285915ab7f90c87ca.setContent(html_358a5d4347cdc14ce534373e4ddde2da);
+            
+        
+
+        marker_f64b8ab5bcd196c99f531a5e385f3faa.bindPopup(popup_d81482d6c511c6b285915ab7f90c87ca)
+        ;
+
+        
+    
+    
+            marker_f64b8ab5bcd196c99f531a5e385f3faa.bindTooltip(
+                `<div>
+                     Goa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff47524b83d99432929dc42294173ac6 = L.marker(
+                [22.2587, 71.1924],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_2b0acfd7195a207f3f96deb257fba494 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_507c4e52074380da2c4e3b9b1448d9d2 = $(`<div id="html_507c4e52074380da2c4e3b9b1448d9d2" style="width: 100.0%; height: 100.0%;"><h5><b>Region: West</b></h3>            <h6><b>State: Gujarat</b></h4>            <strong>Min Unemployment Rate</strong> <b>1.84</b><br>            <strong>Avg Unemployment Rate:</strong> <b>6.38</b><br>            <strong>Max Unemployment Rate:</strong> <b>18.71</b><br>            <strong>Min Employed:</strong> <b>15288878.00</b><br>            <strong>Avg Employed:</strong> <b>22730746.10</b><br>            <strong>Max Employed:</strong> <b>25970259.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>35.50</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>45.49</b><br>            <strong>Max Labour Participation Rate:</strong> <b>50.49</b></div>`)[0];
+                popup_2b0acfd7195a207f3f96deb257fba494.setContent(html_507c4e52074380da2c4e3b9b1448d9d2);
+            
+        
+
+        marker_ff47524b83d99432929dc42294173ac6.bindPopup(popup_2b0acfd7195a207f3f96deb257fba494)
+        ;
+
+        
+    
+    
+            marker_ff47524b83d99432929dc42294173ac6.bindTooltip(
+                `<div>
+                     Gujarat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6b8f0d5c10c199b9875e692d42b5a55 = L.marker(
+                [29.0588, 76.0856],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_ac30e68bdd0981531fa55296a6698f8c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab0c2ac7d4240d7b5fbafb067c0a6ea8 = $(`<div id="html_ab0c2ac7d4240d7b5fbafb067c0a6ea8" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Haryana</b></h4>            <strong>Min Unemployment Rate</strong> <b>19.68</b><br>            <strong>Avg Unemployment Rate:</strong> <b>27.48</b><br>            <strong>Max Unemployment Rate:</strong> <b>43.22</b><br>            <strong>Min Employed:</strong> <b>5647630.00</b><br>            <strong>Avg Employed:</strong> <b>6844059.00</b><br>            <strong>Max Employed:</strong> <b>7693231.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>39.20</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>42.10</b><br>            <strong>Max Labour Participation Rate:</strong> <b>47.32</b></div>`)[0];
+                popup_ac30e68bdd0981531fa55296a6698f8c.setContent(html_ab0c2ac7d4240d7b5fbafb067c0a6ea8);
+            
+        
+
+        marker_f6b8f0d5c10c199b9875e692d42b5a55.bindPopup(popup_ac30e68bdd0981531fa55296a6698f8c)
+        ;
+
+        
+    
+    
+            marker_f6b8f0d5c10c199b9875e692d42b5a55.bindTooltip(
+                `<div>
+                     Haryana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_307db65dc7dc2dd5c6029190c7354153 = L.marker(
+                [31.1048, 77.1734],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_c445d9ca0a9841f2054569278d06dec2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e6f8a08756c1ddcdd20de7a23a7dd434 = $(`<div id="html_e6f8a08756c1ddcdd20de7a23a7dd434" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Himachal Pradesh</b></h4>            <strong>Min Unemployment Rate</strong> <b>2.20</b><br>            <strong>Avg Unemployment Rate:</strong> <b>16.07</b><br>            <strong>Max Unemployment Rate:</strong> <b>26.95</b><br>            <strong>Min Employed:</strong> <b>1131128.00</b><br>            <strong>Avg Employed:</strong> <b>2033884.90</b><br>            <strong>Max Employed:</strong> <b>2287632.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>19.04</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>40.25</b><br>            <strong>Max Labour Participation Rate:</strong> <b>48.25</b></div>`)[0];
+                popup_c445d9ca0a9841f2054569278d06dec2.setContent(html_e6f8a08756c1ddcdd20de7a23a7dd434);
+            
+        
+
+        marker_307db65dc7dc2dd5c6029190c7354153.bindPopup(popup_c445d9ca0a9841f2054569278d06dec2)
+        ;
+
+        
+    
+    
+            marker_307db65dc7dc2dd5c6029190c7354153.bindTooltip(
+                `<div>
+                     Himachal Pradesh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8a2336aaa1ccb643cc03f4237ecc10b = L.marker(
+                [33.7782, 76.5762],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_2c26123a5e8018932ab925549b3d8abf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_14fc5a0f2a21527ec6223d174c3ba39a = $(`<div id="html_14fc5a0f2a21527ec6223d174c3ba39a" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Jammu & Kashmir</b></h4>            <strong>Min Unemployment Rate</strong> <b>10.88</b><br>            <strong>Avg Unemployment Rate:</strong> <b>16.48</b><br>            <strong>Max Unemployment Rate:</strong> <b>21.08</b><br>            <strong>Min Employed:</strong> <b>3106691.00</b><br>            <strong>Avg Employed:</strong> <b>3310031.67</b><br>            <strong>Max Employed:</strong> <b>3558889.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>35.05</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>37.89</b><br>            <strong>Max Labour Participation Rate:</strong> <b>42.20</b></div>`)[0];
+                popup_2c26123a5e8018932ab925549b3d8abf.setContent(html_14fc5a0f2a21527ec6223d174c3ba39a);
+            
+        
+
+        marker_d8a2336aaa1ccb643cc03f4237ecc10b.bindPopup(popup_2c26123a5e8018932ab925549b3d8abf)
+        ;
+
+        
+    
+    
+            marker_d8a2336aaa1ccb643cc03f4237ecc10b.bindTooltip(
+                `<div>
+                     Jammu & Kashmir
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1cb311fbb7e6feee869aadec6c7af37 = L.marker(
+                [23.6102, 85.2799],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_55ea7576805200292ad6d63ea3350301 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_43484ad2e8bb7d2630610ca12e6ba063 = $(`<div id="html_43484ad2e8bb7d2630610ca12e6ba063" style="width: 100.0%; height: 100.0%;"><h5><b>Region: East</b></h3>            <h6><b>State: Jharkhand</b></h4>            <strong>Min Unemployment Rate</strong> <b>7.63</b><br>            <strong>Avg Unemployment Rate:</strong> <b>19.54</b><br>            <strong>Max Unemployment Rate:</strong> <b>59.23</b><br>            <strong>Min Employed:</strong> <b>4145385.00</b><br>            <strong>Avg Employed:</strong> <b>8770642.40</b><br>            <strong>Max Employed:</strong> <b>10425425.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>37.69</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>40.36</b><br>            <strong>Max Labour Participation Rate:</strong> <b>44.40</b></div>`)[0];
+                popup_55ea7576805200292ad6d63ea3350301.setContent(html_43484ad2e8bb7d2630610ca12e6ba063);
+            
+        
+
+        marker_c1cb311fbb7e6feee869aadec6c7af37.bindPopup(popup_55ea7576805200292ad6d63ea3350301)
+        ;
+
+        
+    
+    
+            marker_c1cb311fbb7e6feee869aadec6c7af37.bindTooltip(
+                `<div>
+                     Jharkhand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75bcc32043785b7b288d834f288c5539 = L.marker(
+                [15.3173, 75.7139],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_1f6eddb7d23cebe11bd07f04a7c87ef4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2d89065141397f01c56cbcba78a7ff32 = $(`<div id="html_2d89065141397f01c56cbcba78a7ff32" style="width: 100.0%; height: 100.0%;"><h5><b>Region: South</b></h3>            <h6><b>State: Karnataka</b></h4>            <strong>Min Unemployment Rate</strong> <b>0.50</b><br>            <strong>Avg Unemployment Rate:</strong> <b>7.67</b><br>            <strong>Max Unemployment Rate:</strong> <b>29.84</b><br>            <strong>Min Employed:</strong> <b>16718395.00</b><br>            <strong>Avg Employed:</strong> <b>21624017.60</b><br>            <strong>Max Employed:</strong> <b>24215057.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>36.66</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>42.00</b><br>            <strong>Max Labour Participation Rate:</strong> <b>47.29</b></div>`)[0];
+                popup_1f6eddb7d23cebe11bd07f04a7c87ef4.setContent(html_2d89065141397f01c56cbcba78a7ff32);
+            
+        
+
+        marker_75bcc32043785b7b288d834f288c5539.bindPopup(popup_1f6eddb7d23cebe11bd07f04a7c87ef4)
+        ;
+
+        
+    
+    
+            marker_75bcc32043785b7b288d834f288c5539.bindTooltip(
+                `<div>
+                     Karnataka
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c45a595ea9e9487ea9fa222160f433a3 = L.marker(
+                [10.8505, 76.2711],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_dd141a9313d66e82b81c6681fb001bf2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_af0759e675d3afdca0a2a73eb06b7833 = $(`<div id="html_af0759e675d3afdca0a2a73eb06b7833" style="width: 100.0%; height: 100.0%;"><h5><b>Region: South</b></h3>            <h6><b>State: Kerala</b></h4>            <strong>Min Unemployment Rate</strong> <b>3.88</b><br>            <strong>Avg Unemployment Rate:</strong> <b>9.43</b><br>            <strong>Max Unemployment Rate:</strong> <b>17.88</b><br>            <strong>Min Employed:</strong> <b>3933276.00</b><br>            <strong>Avg Employed:</strong> <b>8596794.90</b><br>            <strong>Max Employed:</strong> <b>9904534.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>16.77</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>33.38</b><br>            <strong>Max Labour Participation Rate:</strong> <b>37.71</b></div>`)[0];
+                popup_dd141a9313d66e82b81c6681fb001bf2.setContent(html_af0759e675d3afdca0a2a73eb06b7833);
+            
+        
+
+        marker_c45a595ea9e9487ea9fa222160f433a3.bindPopup(popup_dd141a9313d66e82b81c6681fb001bf2)
+        ;
+
+        
+    
+    
+            marker_c45a595ea9e9487ea9fa222160f433a3.bindTooltip(
+                `<div>
+                     Kerala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5abfdb921e1bfac0834b4b2657e92ae9 = L.marker(
+                [22.9734, 78.6569],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_de29dd76d49219e69695f03a64226996 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a61b0666dab8be390c0cce2146c9b40c = $(`<div id="html_a61b0666dab8be390c0cce2146c9b40c" style="width: 100.0%; height: 100.0%;"><h5><b>Region: West</b></h3>            <h6><b>State: Madhya Pradesh</b></h4>            <strong>Min Unemployment Rate</strong> <b>2.22</b><br>            <strong>Avg Unemployment Rate:</strong> <b>6.85</b><br>            <strong>Max Unemployment Rate:</strong> <b>21.98</b><br>            <strong>Min Employed:</strong> <b>18443927.00</b><br>            <strong>Avg Employed:</strong> <b>22318335.30</b><br>            <strong>Max Employed:</strong> <b>23940158.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>35.45</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>38.93</b><br>            <strong>Max Labour Participation Rate:</strong> <b>40.88</b></div>`)[0];
+                popup_de29dd76d49219e69695f03a64226996.setContent(html_a61b0666dab8be390c0cce2146c9b40c);
+            
+        
+
+        marker_5abfdb921e1bfac0834b4b2657e92ae9.bindPopup(popup_de29dd76d49219e69695f03a64226996)
+        ;
+
+        
+    
+    
+            marker_5abfdb921e1bfac0834b4b2657e92ae9.bindTooltip(
+                `<div>
+                     Madhya Pradesh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d36b276d1d11fd899f331b487b01a8ac = L.marker(
+                [19.7515, 75.7139],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_4fa93432b12f9e41111d0990abd03db2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f9ffee276600a184c7380e832f9f6045 = $(`<div id="html_f9ffee276600a184c7380e832f9f6045" style="width: 100.0%; height: 100.0%;"><h5><b>Region: West</b></h3>            <h6><b>State: Maharashtra</b></h4>            <strong>Min Unemployment Rate</strong> <b>3.89</b><br>            <strong>Avg Unemployment Rate:</strong> <b>7.98</b><br>            <strong>Max Unemployment Rate:</strong> <b>20.90</b><br>            <strong>Min Employed:</strong> <b>27689253.00</b><br>            <strong>Avg Employed:</strong> <b>39204758.20</b><br>            <strong>Max Employed:</strong> <b>43317881.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>34.32</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>41.47</b><br>            <strong>Max Labour Participation Rate:</strong> <b>44.19</b></div>`)[0];
+                popup_4fa93432b12f9e41111d0990abd03db2.setContent(html_f9ffee276600a184c7380e832f9f6045);
+            
+        
+
+        marker_d36b276d1d11fd899f331b487b01a8ac.bindPopup(popup_4fa93432b12f9e41111d0990abd03db2)
+        ;
+
+        
+    
+    
+            marker_d36b276d1d11fd899f331b487b01a8ac.bindTooltip(
+                `<div>
+                     Maharashtra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_693f786e73993642d51e5d651218ded4 = L.marker(
+                [25.467, 91.3662],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_785a2a4b3ebe70449dfd74cd66053db2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_597963b99386b64606bd438f9394f643 = $(`<div id="html_597963b99386b64606bd438f9394f643" style="width: 100.0%; height: 100.0%;"><h5><b>Region: Northeast</b></h3>            <h6><b>State: Meghalaya</b></h4>            <strong>Min Unemployment Rate</strong> <b>1.15</b><br>            <strong>Avg Unemployment Rate:</strong> <b>3.87</b><br>            <strong>Max Unemployment Rate:</strong> <b>10.03</b><br>            <strong>Min Employed:</strong> <b>965057.00</b><br>            <strong>Avg Employed:</strong> <b>1349815.30</b><br>            <strong>Max Employed:</strong> <b>1491093.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>45.99</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>59.86</b><br>            <strong>Max Labour Participation Rate:</strong> <b>65.49</b></div>`)[0];
+                popup_785a2a4b3ebe70449dfd74cd66053db2.setContent(html_597963b99386b64606bd438f9394f643);
+            
+        
+
+        marker_693f786e73993642d51e5d651218ded4.bindPopup(popup_785a2a4b3ebe70449dfd74cd66053db2)
+        ;
+
+        
+    
+    
+            marker_693f786e73993642d51e5d651218ded4.bindTooltip(
+                `<div>
+                     Meghalaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c749b8c1766ccb602d343cba98e0fdb = L.marker(
+                [20.9517, 85.0985],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_ad1c23026da2c7fe300b13d8d8b7b1a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e5170e78d6f7c8209755c1a9c854990f = $(`<div id="html_e5170e78d6f7c8209755c1a9c854990f" style="width: 100.0%; height: 100.0%;"><h5><b>Region: East</b></h3>            <h6><b>State: Odisha</b></h4>            <strong>Min Unemployment Rate</strong> <b>1.42</b><br>            <strong>Avg Unemployment Rate:</strong> <b>6.46</b><br>            <strong>Max Unemployment Rate:</strong> <b>23.76</b><br>            <strong>Min Employed:</strong> <b>6865693.00</b><br>            <strong>Avg Employed:</strong> <b>12726832.90</b><br>            <strong>Max Employed:</strong> <b>14280735.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>25.23</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>37.75</b><br>            <strong>Max Labour Participation Rate:</strong> <b>41.44</b></div>`)[0];
+                popup_ad1c23026da2c7fe300b13d8d8b7b1a6.setContent(html_e5170e78d6f7c8209755c1a9c854990f);
+            
+        
+
+        marker_4c749b8c1766ccb602d343cba98e0fdb.bindPopup(popup_ad1c23026da2c7fe300b13d8d8b7b1a6)
+        ;
+
+        
+    
+    
+            marker_4c749b8c1766ccb602d343cba98e0fdb.bindTooltip(
+                `<div>
+                     Odisha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40a3c6241bfcce4248784b3b65ad99a8 = L.marker(
+                [11.9416, 79.8083],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_51178d08bf360d17af1bfac149b8dad4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ff82f4dbe92bfccf6876d45cb867c480 = $(`<div id="html_ff82f4dbe92bfccf6876d45cb867c480" style="width: 100.0%; height: 100.0%;"><h5><b>Region: South</b></h3>            <h6><b>State: Puducherry</b></h4>            <strong>Min Unemployment Rate</strong> <b>0.58</b><br>            <strong>Avg Unemployment Rate:</strong> <b>17.94</b><br>            <strong>Max Unemployment Rate:</strong> <b>75.85</b><br>            <strong>Min Employed:</strong> <b>117542.00</b><br>            <strong>Avg Employed:</strong> <b>365262.90</b><br>            <strong>Max Employed:</strong> <b>493961.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>30.80</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>35.92</b><br>            <strong>Max Labour Participation Rate:</strong> <b>40.80</b></div>`)[0];
+                popup_51178d08bf360d17af1bfac149b8dad4.setContent(html_ff82f4dbe92bfccf6876d45cb867c480);
+            
+        
+
+        marker_40a3c6241bfcce4248784b3b65ad99a8.bindPopup(popup_51178d08bf360d17af1bfac149b8dad4)
+        ;
+
+        
+    
+    
+            marker_40a3c6241bfcce4248784b3b65ad99a8.bindTooltip(
+                `<div>
+                     Puducherry
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6941b882320799074ef2aac8cc680eae = L.marker(
+                [31.1471, 75.3412],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_fecb9cc927da69a384edcd0ee6f34882 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c038f24902199c2f0ab2da70123c00e3 = $(`<div id="html_c038f24902199c2f0ab2da70123c00e3" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Punjab</b></h4>            <strong>Min Unemployment Rate</strong> <b>2.86</b><br>            <strong>Avg Unemployment Rate:</strong> <b>11.98</b><br>            <strong>Max Unemployment Rate:</strong> <b>28.33</b><br>            <strong>Min Employed:</strong> <b>6872938.00</b><br>            <strong>Avg Employed:</strong> <b>8783034.20</b><br>            <strong>Max Employed:</strong> <b>9975485.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>28.99</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>39.98</b><br>            <strong>Max Labour Participation Rate:</strong> <b>44.69</b></div>`)[0];
+                popup_fecb9cc927da69a384edcd0ee6f34882.setContent(html_c038f24902199c2f0ab2da70123c00e3);
+            
+        
+
+        marker_6941b882320799074ef2aac8cc680eae.bindPopup(popup_fecb9cc927da69a384edcd0ee6f34882)
+        ;
+
+        
+    
+    
+            marker_6941b882320799074ef2aac8cc680eae.bindTooltip(
+                `<div>
+                     Punjab
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f10230793785382511e978f8d673a0b5 = L.marker(
+                [27.0238, 74.2179],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_e5b00fc0c8712a501e024bfe7f80b23a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7e445665a7fc2585a14fc6a0e3c61fad = $(`<div id="html_7e445665a7fc2585a14fc6a0e3c61fad" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Rajasthan</b></h4>            <strong>Min Unemployment Rate</strong> <b>10.97</b><br>            <strong>Avg Unemployment Rate:</strong> <b>15.87</b><br>            <strong>Max Unemployment Rate:</strong> <b>24.15</b><br>            <strong>Min Employed:</strong> <b>15984142.00</b><br>            <strong>Avg Employed:</strong> <b>19731752.20</b><br>            <strong>Max Employed:</strong> <b>20641716.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>33.71</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>40.59</b><br>            <strong>Max Labour Participation Rate:</strong> <b>44.92</b></div>`)[0];
+                popup_e5b00fc0c8712a501e024bfe7f80b23a.setContent(html_7e445665a7fc2585a14fc6a0e3c61fad);
+            
+        
+
+        marker_f10230793785382511e978f8d673a0b5.bindPopup(popup_e5b00fc0c8712a501e024bfe7f80b23a)
+        ;
+
+        
+    
+    
+            marker_f10230793785382511e978f8d673a0b5.bindTooltip(
+                `<div>
+                     Rajasthan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49645f2bcfbddbeee1a3c943f60692a4 = L.marker(
+                [27.533, 88.5122],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_9ed2ef09569bbaf062952490ec14ea72 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a5b436653f773f2d5697a656cc180f3 = $(`<div id="html_4a5b436653f773f2d5697a656cc180f3" style="width: 100.0%; height: 100.0%;"><h5><b>Region: Northeast</b></h3>            <h6><b>State: Sikkim</b></h4>            <strong>Min Unemployment Rate</strong> <b>0.88</b><br>            <strong>Avg Unemployment Rate:</strong> <b>9.79</b><br>            <strong>Max Unemployment Rate:</strong> <b>24.51</b><br>            <strong>Min Employed:</strong> <b>193427.00</b><br>            <strong>Avg Employed:</strong> <b>234523.25</b><br>            <strong>Max Employed:</strong> <b>265175.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>38.70</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>45.76</b><br>            <strong>Max Labour Participation Rate:</strong> <b>60.59</b></div>`)[0];
+                popup_9ed2ef09569bbaf062952490ec14ea72.setContent(html_4a5b436653f773f2d5697a656cc180f3);
+            
+        
+
+        marker_49645f2bcfbddbeee1a3c943f60692a4.bindPopup(popup_9ed2ef09569bbaf062952490ec14ea72)
+        ;
+
+        
+    
+    
+            marker_49645f2bcfbddbeee1a3c943f60692a4.bindTooltip(
+                `<div>
+                     Sikkim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12c88c1955644eabd2ab849536b14610 = L.marker(
+                [11.1271, 78.6569],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_6cdb961daad9e0d52117a618487e748e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_325fcfe90b8ff5b802b0f6eacf789588 = $(`<div id="html_325fcfe90b8ff5b802b0f6eacf789588" style="width: 100.0%; height: 100.0%;"><h5><b>Region: South</b></h3>            <h6><b>State: Tamil Nadu</b></h4>            <strong>Min Unemployment Rate</strong> <b>1.57</b><br>            <strong>Avg Unemployment Rate:</strong> <b>12.19</b><br>            <strong>Max Unemployment Rate:</strong> <b>49.83</b><br>            <strong>Min Employed:</strong> <b>9719167.00</b><br>            <strong>Avg Employed:</strong> <b>21987898.10</b><br>            <strong>Max Employed:</strong> <b>27570589.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>26.23</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>37.38</b><br>            <strong>Max Labour Participation Rate:</strong> <b>43.91</b></div>`)[0];
+                popup_6cdb961daad9e0d52117a618487e748e.setContent(html_325fcfe90b8ff5b802b0f6eacf789588);
+            
+        
+
+        marker_12c88c1955644eabd2ab849536b14610.bindPopup(popup_6cdb961daad9e0d52117a618487e748e)
+        ;
+
+        
+    
+    
+            marker_12c88c1955644eabd2ab849536b14610.bindTooltip(
+                `<div>
+                     Tamil Nadu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcf0291e1100da4fba20721591480ea0 = L.marker(
+                [18.1124, 79.0193],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_4784660d8ceceac7aaccccffba3fdf2a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6e1f0756301092c79d6f246a9017f28 = $(`<div id="html_b6e1f0756301092c79d6f246a9017f28" style="width: 100.0%; height: 100.0%;"><h5><b>Region: South</b></h3>            <h6><b>State: Telangana</b></h4>            <strong>Min Unemployment Rate</strong> <b>2.86</b><br>            <strong>Avg Unemployment Rate:</strong> <b>6.83</b><br>            <strong>Max Unemployment Rate:</strong> <b>14.70</b><br>            <strong>Min Employed:</strong> <b>12172230.00</b><br>            <strong>Avg Employed:</strong> <b>16244082.50</b><br>            <strong>Max Employed:</strong> <b>18185429.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>41.06</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>54.97</b><br>            <strong>Max Labour Participation Rate:</strong> <b>60.59</b></div>`)[0];
+                popup_4784660d8ceceac7aaccccffba3fdf2a.setContent(html_b6e1f0756301092c79d6f246a9017f28);
+            
+        
+
+        marker_fcf0291e1100da4fba20721591480ea0.bindPopup(popup_4784660d8ceceac7aaccccffba3fdf2a)
+        ;
+
+        
+    
+    
+            marker_fcf0291e1100da4fba20721591480ea0.bindTooltip(
+                `<div>
+                     Telangana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f92322b03c61eb081616979f9d796103 = L.marker(
+                [23.9408, 91.9882],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_2b1403c51399e5ac908f3e4ea0095119 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6eace3445edce274adf290e0cc3c505f = $(`<div id="html_6eace3445edce274adf290e0cc3c505f" style="width: 100.0%; height: 100.0%;"><h5><b>Region: Northeast</b></h3>            <h6><b>State: Tripura</b></h4>            <strong>Min Unemployment Rate</strong> <b>11.57</b><br>            <strong>Avg Unemployment Rate:</strong> <b>25.05</b><br>            <strong>Max Unemployment Rate:</strong> <b>41.23</b><br>            <strong>Min Employed:</strong> <b>971514.00</b><br>            <strong>Avg Employed:</strong> <b>1397291.60</b><br>            <strong>Max Employed:</strong> <b>1584686.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>50.77</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>57.85</b><br>            <strong>Max Labour Participation Rate:</strong> <b>69.69</b></div>`)[0];
+                popup_2b1403c51399e5ac908f3e4ea0095119.setContent(html_6eace3445edce274adf290e0cc3c505f);
+            
+        
+
+        marker_f92322b03c61eb081616979f9d796103.bindPopup(popup_2b1403c51399e5ac908f3e4ea0095119)
+        ;
+
+        
+    
+    
+            marker_f92322b03c61eb081616979f9d796103.bindTooltip(
+                `<div>
+                     Tripura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd84fd5873ec4e7dc8c7aeb7ed6dcc02 = L.marker(
+                [26.8467, 80.9462],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_75c5ff3890a525e1ef82739329436197 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d9ec3f101d4af41a5de867791b702a9c = $(`<div id="html_d9ec3f101d4af41a5de867791b702a9c" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Uttar Pradesh</b></h4>            <strong>Min Unemployment Rate</strong> <b>3.75</b><br>            <strong>Avg Unemployment Rate:</strong> <b>9.74</b><br>            <strong>Max Unemployment Rate:</strong> <b>21.54</b><br>            <strong>Min Employed:</strong> <b>49801902.00</b><br>            <strong>Avg Employed:</strong> <b>55524799.00</b><br>            <strong>Max Employed:</strong> <b>59433759.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>35.45</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>37.61</b><br>            <strong>Max Labour Participation Rate:</strong> <b>39.73</b></div>`)[0];
+                popup_75c5ff3890a525e1ef82739329436197.setContent(html_d9ec3f101d4af41a5de867791b702a9c);
+            
+        
+
+        marker_bd84fd5873ec4e7dc8c7aeb7ed6dcc02.bindPopup(popup_75c5ff3890a525e1ef82739329436197)
+        ;
+
+        
+    
+    
+            marker_bd84fd5873ec4e7dc8c7aeb7ed6dcc02.bindTooltip(
+                `<div>
+                     Uttar Pradesh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b08bf291d5497a8474cb56b65fd7688 = L.marker(
+                [30.0668, 79.0193],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_e1eb3ddf96b842f7abd4ebc9802c43dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fa62ead0dc984563259ead1e4785fa9 = $(`<div id="html_3fa62ead0dc984563259ead1e4785fa9" style="width: 100.0%; height: 100.0%;"><h5><b>Region: North</b></h3>            <h6><b>State: Uttarakhand</b></h4>            <strong>Min Unemployment Rate</strong> <b>4.99</b><br>            <strong>Avg Unemployment Rate:</strong> <b>11.16</b><br>            <strong>Max Unemployment Rate:</strong> <b>22.26</b><br>            <strong>Min Employed:</strong> <b>2539302.00</b><br>            <strong>Avg Employed:</strong> <b>2743274.90</b><br>            <strong>Max Employed:</strong> <b>3020931.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>32.99</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>35.26</b><br>            <strong>Max Labour Participation Rate:</strong> <b>39.18</b></div>`)[0];
+                popup_e1eb3ddf96b842f7abd4ebc9802c43dd.setContent(html_3fa62ead0dc984563259ead1e4785fa9);
+            
+        
+
+        marker_0b08bf291d5497a8474cb56b65fd7688.bindPopup(popup_e1eb3ddf96b842f7abd4ebc9802c43dd)
+        ;
+
+        
+    
+    
+            marker_0b08bf291d5497a8474cb56b65fd7688.bindTooltip(
+                `<div>
+                     Uttarakhand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cba18cf51b483bc4d2b903b6197a4d5 = L.marker(
+                [22.9868, 87.855],
+                {}
+            ).addTo(map_dd834e7714af355b574c7ded81b1662b);
+        
+    
+        var popup_afc31a91a5fa30bf4e55343cb8d78d78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2cdc2a041ff4fc74665003e176ef54df = $(`<div id="html_2cdc2a041ff4fc74665003e176ef54df" style="width: 100.0%; height: 100.0%;"><h5><b>Region: East</b></h3>            <h6><b>State: West Bengal</b></h4>            <strong>Min Unemployment Rate</strong> <b>4.92</b><br>            <strong>Avg Unemployment Rate:</strong> <b>10.19</b><br>            <strong>Max Unemployment Rate:</strong> <b>17.41</b><br>            <strong>Min Employed:</strong> <b>26938836.00</b><br>            <strong>Avg Employed:</strong> <b>33305164.30</b><br>            <strong>Max Employed:</strong> <b>36964178.00</b><br>            <strong>Min Labour Participation Rate:</strong> <b>39.90</b><br>            <strong>Avg Labour Participation Rate:</strong> <b>45.16</b><br>            <strong>Max Labour Participation Rate:</strong> <b>47.74</b></div>`)[0];
+                popup_afc31a91a5fa30bf4e55343cb8d78d78.setContent(html_2cdc2a041ff4fc74665003e176ef54df);
+            
+        
+
+        marker_3cba18cf51b483bc4d2b903b6197a4d5.bindPopup(popup_afc31a91a5fa30bf4e55343cb8d78d78)
+        ;
+
+        
+    
+    
+            marker_3cba18cf51b483bc4d2b903b6197a4d5.bindTooltip(
+                `<div>
+                     West Bengal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
