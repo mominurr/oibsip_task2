@@ -15,6 +15,7 @@ def show_fig_estimated_unemployment_rate(unique_data_df):
     """
     # Plot the data in bar diagram with x-axis as Region and y-axis as Minimum Estimated Unemployment Rate
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Minimum Estimated Unemployment Rate'])
     plt.xlabel('Region')
     plt.ylabel('Minimum Estimated Unemployment Rate')
@@ -25,6 +26,7 @@ def show_fig_estimated_unemployment_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Minimum Estimated Unemployment Rate
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Minimum Estimated Unemployment Rate'])
     plt.xlabel('States')
     plt.ylabel('Minimum Estimated Unemployment Rate')
@@ -36,6 +38,7 @@ def show_fig_estimated_unemployment_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as Region and y-axis as Average Estimated Unemployment Rate
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Average Estimated Unemployment Rate'])
     plt.xlabel('Region')
     plt.ylabel('Average Estimated Unemployment Rate')
@@ -46,6 +49,7 @@ def show_fig_estimated_unemployment_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Average Estimated Unemployment Rate
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Average Estimated Unemployment Rate'])
     plt.xlabel('States')
     plt.ylabel('Average Estimated Unemployment Rate')
@@ -57,6 +61,7 @@ def show_fig_estimated_unemployment_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as Region and y-axis as Maximum Estimated Unemployment Rate
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Maximum Estimated Unemployment Rate'])
     plt.xlabel('Region')
     plt.ylabel('Maximum Estimated Unemployment Rate')
@@ -67,6 +72,7 @@ def show_fig_estimated_unemployment_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Maximum Estimated Unemployment Rate
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Maximum Estimated Unemployment Rate'])
     plt.xlabel('States')
     plt.ylabel('Maximum Estimated Unemployment Rate')
@@ -87,6 +93,7 @@ def show_fig_estimated_employed(unique_data_df):
         
     # Plot the data in bar diagram with x-axis as Region and y-axis as Minimum Estimated Employed
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Minimum Estimated Employed'])
     plt.xlabel('Region')
     plt.ylabel('Minimum Estimated Employed')
@@ -97,6 +104,7 @@ def show_fig_estimated_employed(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Minimum Estimated Employed
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Minimum Estimated Employed'])
     plt.xlabel('States')
     plt.ylabel('Minimum Estimated Employed')
@@ -108,6 +116,7 @@ def show_fig_estimated_employed(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as Region and y-axis as Average Estimated Employed
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Average Estimated Employed'])
     plt.xlabel('Region')
     plt.ylabel('Average Estimated Employed')
@@ -118,6 +127,7 @@ def show_fig_estimated_employed(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Average Estimated Employed
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Average Estimated Employed'])
     plt.xlabel('States')
     plt.ylabel('Average Estimated Employed')
@@ -129,6 +139,7 @@ def show_fig_estimated_employed(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as Region and y-axis as Maximum Estimated Employed
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Maximum Estimated Employed'])
     plt.xlabel('Region')
     plt.ylabel('Maximum Estimated Employed')
@@ -139,6 +150,7 @@ def show_fig_estimated_employed(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Maximum Estimated Employed
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Maximum Estimated Employed'])
     plt.xlabel('States')
     plt.ylabel('Maximum Estimated Employed')
@@ -159,6 +171,7 @@ def show_fig_estimated_labour_participation_rate(unique_data_df):
         
     # Plot the data in bar diagram with x-axis as Region and y-axis as Minimum Estimated Labour Participation Rate
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Minimum Estimated Labour Participation Rate'])
     plt.xlabel('Region')
     plt.ylabel('Minimum Estimated Labour Participation Rate')
@@ -169,6 +182,7 @@ def show_fig_estimated_labour_participation_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Minimum Estimated Labour Participation Rate
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Minimum Estimated Labour Participation Rate'])
     plt.xlabel('States')
     plt.ylabel('Minimum Estimated Labour Participation Rate')
@@ -180,6 +194,7 @@ def show_fig_estimated_labour_participation_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as Region and y-axis as Average Estimated Labour Participation Rate
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Average Estimated Labour Participation Rate'])
     plt.xlabel('Region')
     plt.ylabel('Average Estimated Labour Participation Rate')
@@ -190,6 +205,7 @@ def show_fig_estimated_labour_participation_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Average Estimated Labour Participation Rate
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Average Estimated Labour Participation Rate'])
     plt.xlabel('States')
     plt.ylabel('Average Estimated Labour Participation Rate')
@@ -201,6 +217,7 @@ def show_fig_estimated_labour_participation_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as Region and y-axis as Maximum Estimated Labour Participation Rate
     # showing by Region wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['Region'], unique_data_df['Maximum Estimated Labour Participation Rate'])
     plt.xlabel('Region')
     plt.ylabel('Maximum Estimated Labour Participation Rate')
@@ -211,6 +228,7 @@ def show_fig_estimated_labour_participation_rate(unique_data_df):
 
     # Plot the data in bar diagram with x-axis as States and y-axis as Maximum Estimated Labour Participation Rate
     # showing by states wise
+    plt.figure(figsize=(12, 8))
     plt.bar(unique_data_df['States'], unique_data_df['Maximum Estimated Labour Participation Rate'])
     plt.xlabel('States')
     plt.ylabel('Maximum Estimated Labour Participation Rate')
@@ -253,7 +271,7 @@ def data_visualization_with_map(unique_data_df):
         ).add_to(UNEMPLOYMENT_MAP)
 
     
-    # UNEMPLOYMENT_MAP.save('state_map.html')  # Save the map as an HTML file
+    UNEMPLOYMENT_MAP.save('state_map.html')  # Save the map as an HTML file
     # Display the map
     UNEMPLOYMENT_MAP.show_in_browser()
     
